@@ -2,17 +2,6 @@ import React from 'react';
 import './About.css';
 import StarRating from './StarRating';
 
-const starAnimation = {
-    hidden: { width: 0 },
-    visible: {
-        width: "100%",
-        transition: {
-            duration: 0.5,
-            ease: [0.445, 0.05, 0.55, 0.95],
-        },
-    },
-};
-
 const skills = [
     { name: 'Java', rating: 4 },
     { name: 'Spring', rating: 4 },
