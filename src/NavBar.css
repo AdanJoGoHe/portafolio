@@ -1,0 +1,85 @@
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    transform: translateX(-100%);
+    transition: transform 1s ease-in;
+}
+
+.nav-loaded {
+    transform: translateX(0);
+}
+
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nav-link-item {
+    text-align: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #888;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+@keyframes cyberpunk {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+    25% {
+        clip-path: inset(0 75% 0 25%);
+    }
+    50% {
+        clip-path: inset(0 50% 0 50%);
+    }
+    75% {
+        clip-path: inset(0 25% 0 75%);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.photo {
+    animation: cyberpunk 2s ease-in-out forwards;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
